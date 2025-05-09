@@ -18,6 +18,8 @@ repositories {
 dependencies {
     // Use JUnit test framework.
     testImplementation libs.junit
+    //libs algs4
+    implamentation files('app/libs/algs4.jar')
 
     // This dependency is used by the application.
     implementation libs.guava
