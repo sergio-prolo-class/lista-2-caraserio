@@ -1,21 +1,46 @@
-import edu.princeton.cs.algs4.Draw;
 package ifsc.poo;
+import edu.princeton.cs.algs4.Draw;
+
+
+
+
 
 public class App {
-   // Atributos
- private Draw draw;
+   // Atributo
+   private Draw draw;
 
- // Construtor
- public App() {
-     this.draw = new Draw();
-     this.draw.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
-     // Ajusta o tamanho da tela usando algum método do objeto Draw
-     // Ajusta a escala X usando algum outro método do objeto Draw
-     // Ajusta a escala Y usando ainda outro método do objeto Draw
- }
-// Main
- public static void main(String[] args){
-     App app = new App();
-     app.draw.show();
- }
- }
+
+   // Construtor
+   public App() {
+       this.draw = new Draw();
+       this.draw.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
+
+
+       // Ajusta o tamanho da tela
+       this.draw.setCanvasSize(1000, 600); //Largura e altura
+
+
+       // Ajusta a escala X
+       this.draw.setXscale(0, 1000); //Define a escala X
+
+
+       // Ajusta a escala Y
+       this.draw.setYscale(0, 600); //Define a escala Y
+
+
+       //mostra a janela
+       this.draw.setVisible(true); //atualizado
+
+
+   }
+
+
+   // Main
+   public static void main(String[] args) {
+       App app = new App();
+       Draw.setVisible(true);
+   }
+}
+
+
+
