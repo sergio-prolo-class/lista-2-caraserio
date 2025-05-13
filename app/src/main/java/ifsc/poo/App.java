@@ -1,9 +1,11 @@
 package ifsc.poo;
 import edu.princeton.cs.algs4.Draw;
 
+
+
 public class App {
    // Atributo
-   private Draw draw;
+   private final Draw draw;
 
 
    // Construtor
@@ -34,7 +36,7 @@ public class App {
    // Main
    public static void main(String[] args) {
        App app = new App();
-       Draw.setVisible(true);
+       app.draw.setVisible(true);
    }
 }
 
