@@ -1,6 +1,8 @@
 package ifsc.poo;
 import edu.princeton.cs.algs4.Draw;
 
+import static edu.princeton.cs.algs4.Draw.*;
+
 public class App {
    // Atributo
    private Draw draw;
