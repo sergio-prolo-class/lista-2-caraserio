@@ -21,13 +21,31 @@ public class App {
 
         // Mostra a janela
         this.draw.setVisible(true);
-
-        Grade grade = new Grade(50,50);
-        grade.desenhar(draw);
     }
 
     // Main
     public static void main(String[] args) {
         App app = new App();
+
+        Grade grade = new Grade(50, 50);
+        grade.desenhar(app.draw);
+
+        Barco barco = new Barco(grade, 4, 0, 0, true);
+        barco.desenhar(app.draw);
+        // Desenha os barcos
+        Barco barco1 = new Barco(grade,2,0,8,true);
+        barco1.desenhar(app.draw);
+
+        Barco barco2 = new Barco(grade,3,5,0,true);
+        barco2.desenhar(app.draw);
+
+        Barco barco3 = new Barco(grade,4,4,5,false);
+        barco3.desenhar(app.draw);
+
+        Barco barco4 = new Barco(grade,4,7,2,true);
+        barco4.desenhar(app.draw);
+
+        Barco barco5 = new Barco(grade,5,2,7,false);
+        barco5.desenhar(app.draw);
     }
 }
