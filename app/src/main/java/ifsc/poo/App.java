@@ -48,6 +48,9 @@ public class App {
         Barco barco4 = new Barco(grade,5,9,5,true);
         barco4.desenhar(app.draw);
 
+        Barco barco5 = new Barco(grade,4,7,5,true);
+        barco5.desenhar(app.draw);
+
 
     }
 }
