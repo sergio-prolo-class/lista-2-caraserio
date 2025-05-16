@@ -9,9 +9,6 @@ public class Barco {//Atributos/variaveis
    private boolean vertical;
    private static final int tamanho2 = 40;
    public int X; int Y;
-      
-  
-
 
    public Barco(Grade grade, int tamanho, int posX, int posY, boolean vertical) {//metodo
        this.grade = grade;
@@ -20,7 +17,6 @@ public class Barco {//Atributos/variaveis
        this.posY = posY;
        this.vertical = vertical;
    }
-
 
    public void desenhar(Draw draw) {
        draw.setPenRadius();
@@ -37,7 +33,6 @@ public class Barco {//Atributos/variaveis
            } else {
                xPixel += i * tamanho2;
            }
-
 
            draw.filledRectangle(xPixel + tamanho2 / 2.0, yPixel + tamanho2 / 2.0,
                                 tamanho2 / 2.0, tamanho2 / 2.0);

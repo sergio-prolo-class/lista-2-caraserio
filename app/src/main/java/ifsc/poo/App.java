@@ -1,37 +1,33 @@
 package ifsc.poo;
 import edu.princeton.cs.algs4.Draw;
 
-import static edu.princeton.cs.algs4.Draw.*;
-
 public class App {
-   // Atributo
-   private Draw draw;
+    // Atributo
+    private Draw draw;
 
-   // Construtor
-   public App() {
-       this.draw = new Draw();
-       this.draw.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
+    // Construtor
+    public App() {
+        this.draw = new Draw();
+        this.draw.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
 
-       // Ajusta o tamanho da tela
-       this.draw.setCanvasSize(1000, 600); //Largura e altura
+        // Ajusta o tamanho da tela
+        this.draw.setCanvasSize(1000, 600); // Largura e altura
 
-       // Ajusta a escala X
-       this.draw.setXscale(0, 1000); //Define a escala X
+        // Ajusta a escala X
+        this.draw.setXscale(0, 1000); // Define a escala X
 
-       // Ajusta a escala Y
-       this.draw.setYscale(0, 600); //Define a escala Y
+        // Ajusta a escala Y
+        this.draw.setYscale(0, 600); // Define a escala Y
 
+        // Mostra a janela
+        this.draw.setVisible(true);
 
-       //mostra a janela
-       this.draw.setVisible(true); //atualizado
+        Grade grade = new Grade(50,50);
+        grade.desenhar(draw);
+    }
 
-
-   }
-
-
-   // Main
-   public static void main(String[] args) {
-       App app = new App();
-       Draw.setVisible(true);
-   }
+    // Main
+    public static void main(String[] args) {
+        App app = new App();
+    }
 }
